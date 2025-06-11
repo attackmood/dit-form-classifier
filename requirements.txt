@@ -1,0 +1,11 @@
+torch~=2.0.1+cpu
+pillow~=9.5.0
+transformers~=4.30.0
+scikit-learn~=1.6.1
+datasets~=2.13.0
+numpy~=1.26.4
+opencv-python~=4.11.0.86
+matplotlib~=3.10.3
+uvicorn~=0.34.3
+fastapi~=0.115.12
+python-multipart~=0.0.20
