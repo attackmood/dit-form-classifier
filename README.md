@@ -1,7 +1,7 @@
 # dit-form-classifier
 ## 📋 개요 (Overview)
-dit-form-classifier는 Microsoft의 Document Image Transformer (DiT) 모델을 검사 의뢰지 양식 분류 작업에 맞게 미세 조정한 프로젝트입니다.  
-이 프로젝트는 이미지 기반의 문서 분류 모델을 개발, 훈련 및 평가하기 위한 코드베이스를 제공합니다.
+Microsoft의 Document Image Transformer (DiT) 모델을 활용하여 의료 검사의뢰서를 자동으로 분류하는 딥러닝 기반 문서 분류 시스템입니다.
+검사의뢰서는 대부분 유사한 양식 구조를 가지고 있어 사람이 수작업으로 분류하는 데 시간이 소요됩니다. 본 프로젝트는 DiT 모델의 강력한 이미지 기반 문서 이해 능력을 활용하여, 검사의뢰서 2종을 포함한 3개 클래스를 자동으로 구분합니다.
 
 - Python version = 3.10.16
 - Python Modules: [requirements](https://github.com/Labgenomics-IT/dit-form-classifier/blob/main/requirements.txt)
@@ -14,7 +14,25 @@ dit-form-classifier는 Microsoft의 Document Image Transformer (DiT) 모델을 �
 - PyTorch 기반: 널리 사용되는 딥러닝 프레임워크 PyTorch를 사용하여 개발되었습니다.
 
 
-## 🛠️ 개발 환경 설정 (Development Environment Setup)
+---
+
+## 🛠️ 기술 스택
+
+### 핵심 기술
+- **Python 3.10.16**
+- **PyTorch 2.0.1** - 딥러닝 프레임워크
+- **Hugging Face Transformers 4.30.0** - 사전 훈련 모델 및 학습 파이프라인
+- **Microsoft DiT-base** - Document Image Transformer 사전 훈련 모델
+
+### 주요 라이브러리
+- **FastAPI 0.115.12** - 비동기 웹 API 프레임워크
+- **Hugging Face Datasets 2.13.0** - 데이터셋 관리 및 전처리
+- **scikit-learn 1.6.1** - 데이터 분할 및 평가 지표
+- **Pillow 9.5.0** - 이미지 처리
+- **matplotlib 3.10.3** - 학습 진행 상황 시각화
+---
+
+## 🏗️ 개발 환경 설정 (Development Environment Setup)
 ### 📦 필수 라이브러리 설치 (Prerequisites)
 프로젝트 개발 및 실행에 필요한 모든 라이브러리는 requirements.txt 파일에 명시되어 있습니다.  
 다음 명령어를 사용하여 가상 환경에 설치하는 것을 권장합니다.
